@@ -38,3 +38,10 @@ print('*' * 80)
 all_locations = table.find_all('span', class_='twLocation')
 for location in all_locations:
     print(location.text) # gets all locations
+
+print('*' * 80) 
+print('*' * 80)
+
+all_dates = table.find_all('div', class_='twSimpleTableGroupHead')
+for date in all_dates:
+    print(date.text) # gets all dates
